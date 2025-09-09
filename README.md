@@ -49,6 +49,7 @@ todo/
 │   ├── todoService.ts       # Todo service functions
 │   ├── types.ts             # TypeScript type definitions
 │   └── utils.ts             # Utility functions (clsx, tailwind-merge)
+├── Dockerfile             # Docker configuration file
 └── supabase/
     └── schema.sql           # Database schema
 ```
