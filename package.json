@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "setup-db": "tsx --env-file=.env.local scripts/setup-database.ts",
-    "create-tables": "tsx --env-file=.env.local scripts/create-tables.ts"
+    "create-tables": "tsx --env-file=.env.local scripts/create-tables.ts",
+    "docker:build": "docker build -t todo-app .",
+    "docker:run": "docker run -p 3001:3000 -d todo-app"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
@@ -34,7 +36,8 @@
     "dotenv": "^17.2.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.2"
   }
 }
