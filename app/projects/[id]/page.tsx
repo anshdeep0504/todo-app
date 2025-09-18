@@ -49,12 +49,15 @@ export default function ProjectTodosPage() {
     due_date: string
     priority: Priority
     status: Status
+    assignedUserIds?: string[]
   }) => {
     try {
       const newTodo = await todoService.createTodo(formData)
       setTodos(prev => [newTodo, ...prev])
+      return newTodo;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to create todo')
+      throw err;
     }
   }
 

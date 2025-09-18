@@ -1,5 +1,10 @@
 # Todo Management App
 
+![Todo App Screenshot 1](assets/images/1.png)
+![Todo App Screenshot 2](assets/images/2.png)
+![Todo App Screenshot 3](assets/images/3.png)
+![Todo App Screenshot 4](assets/images/4.png)
+
 A modern, modular todo management application built with Next.js, TypeScript, and shadcn/ui components.
 
 ## Features
